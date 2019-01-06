@@ -2,6 +2,13 @@
 
 # Musical Patterns - Snapshot
 
+Similar to the `@musical-patterns/cli` repo, upon installation, copies snapshot files into the pattern repo.
+
+These files are:
+
+- Makefile.snapshot
+- test/snapshot.test.ts
+
 When inside the directory of a pattern for which you want to update the snapshot, run:
 
 ```
