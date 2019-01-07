@@ -12,7 +12,7 @@ These files are:
 When inside the directory of a pattern for which you want to update the snapshot, run:
 
 ```
-mps
+musical-patterns-snapshot
 ```
 
 This snapshot is used by the snapshot test to ensure the pattern stays locked down unless you mean to change it.
