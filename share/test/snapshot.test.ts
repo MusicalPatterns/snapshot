@@ -1,3 +1,5 @@
+// tslint:disable:no-unsafe-any
+
 // tslint:disable-next-line:no-implicit-dependencies
 import { compilePattern } from '@musical-patterns/compiler'
 import { PatternSpec, PatternSpecProperty, SettledPatternSpec } from '@musical-patterns/pattern'
