@@ -3,6 +3,7 @@
 // tslint:disable-next-line:no-implicit-dependencies
 import { compilePattern } from '@musical-patterns/compiler'
 import { PatternSpec, PatternSpecProperty, SettledPatternSpec } from '@musical-patterns/pattern'
+import { Maybe } from '@musical-patterns/utilities'
 import * as path from 'path'
 
 const extractInitialSettledPatternSpec: (spec: PatternSpec) => SettledPatternSpec =
@@ -11,8 +12,8 @@ const extractInitialSettledPatternSpec: (spec: PatternSpec) => SettledPatternSpe
             .reduce(
                 (
                     initialSettledPatternSpec: SettledPatternSpec,
-                    [ key, val ]: [ string, PatternSpecProperty ],
-                ) => ({ ...initialSettledPatternSpec, [ key ]: val.initial }),
+                    [ key, val ]: [ string, Maybe<PatternSpecProperty> ],
+                ) => ({ ...initialSettledPatternSpec, [ key ]: val && val.initial }),
                 {},
             )
 
