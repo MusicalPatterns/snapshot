@@ -1,6 +1,6 @@
 {
   "name": "@musical-patterns/snapshot",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
@@ -15,12 +15,10 @@
     "url": "https://github.com/MusicalPatterns/snapshot.git"
   },
   "dependencies": {
-    "@musical-patterns/compiler": "^1.0.70",
-    "@musical-patterns/pattern": "^1.0.80",
-    "@musical-patterns/utilities": "^1.0.149"
+    "@musical-patterns/compiler": "^1.0.71"
   },
   "devDependencies": {
-    "@musical-patterns/cli": "^1.0.257",
+    "@musical-patterns/cli": "^1.0.262",
     "typescript": "^3.2.2"
   }
 }
