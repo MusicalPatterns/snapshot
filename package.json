@@ -1,6 +1,6 @@
 {
   "name": "@musical-patterns/snapshot",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "@musical-patterns/cli": "^1.0.262",
-    "typescript": "^3.2.2"
+    "typescript": "^3.2.4"
   }
 }
