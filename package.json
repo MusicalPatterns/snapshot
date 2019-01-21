@@ -18,7 +18,7 @@
     "@musical-patterns/compiler": "^1.0.74"
   },
   "devDependencies": {
-    "@musical-patterns/cli": "^1.0.275",
+    "@musical-patterns/cli": "^1.0.283",
     "typescript": "^3.2.4"
   }
 }
