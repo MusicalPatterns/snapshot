@@ -1,2 +1,0 @@
-Makefile.snapshot
-test/snapshot.test.ts
