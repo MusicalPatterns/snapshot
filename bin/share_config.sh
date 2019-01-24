@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
-. ../../../node_modules/@musical-patterns/cli/bin/non_cli/share_files.sh
+export CLI_DIR=../../../node_modules/@musical-patterns/cli
+
+. ${CLI_DIR}/bin/non_cli/share_files.sh
 
 share_files
