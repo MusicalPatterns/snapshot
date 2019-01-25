@@ -5,4 +5,4 @@ snapshot:
 	@musical-patterns-snapshot
 
 match-config:
-	@bash ./node_modules/@musical-patterns/snapshot/bin/match-config.sh; make match-config
+	@bash ./node_modules/@musical-patterns/snapshot/bin/match-config.sh; musical-patterns-cli match-config
