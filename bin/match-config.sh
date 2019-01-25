@@ -16,6 +16,7 @@ check_match() {
 }
 
 shopt -s globstar
+shopt -s dotglob
 for SHARED_FILE in node_modules/@musical-patterns/snapshot/share/**/*
 do
 	if [[ -f "${SHARED_FILE}" ]]; then
