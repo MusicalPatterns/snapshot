@@ -1,14 +1,11 @@
 {
   "name": "@musical-patterns/snapshot",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
   "bin": {
     "musical-patterns-snapshot": "bin/index.sh"
-  },
-  "scripts": {
-    "postinstall": "bash ./bin/postinstall.sh"
   },
   "repository": {
     "type": "git",
