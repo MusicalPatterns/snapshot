@@ -1,4 +1,3 @@
-// tslint:disable-next-line:no-implicit-dependencies
 import { compilePattern } from '@musical-patterns/compiler'
 import * as path from 'path'
 
