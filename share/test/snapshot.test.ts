@@ -19,7 +19,7 @@ describe('snapshot', () => {
     else {
         it('stays locked down', async (done: DoneFn) => {
             expect(JSON.stringify(
-                await compilePattern({ material: pattern.material, spec: pattern.specData.initial }),
+                await compilePattern(pattern),
                 undefined,
                 2,
             ))
