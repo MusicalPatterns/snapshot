@@ -18,12 +18,12 @@ describe('snapshot', () => {
     }
     else {
         it('stays locked down', async (done: DoneFn) => {
-            expect(JSON.stringify(
+            expect(JSON.parse(JSON.stringify(
                 await compilePattern(pattern),
                 undefined,
                 2,
-            ))
-                .toEqual(JSON.stringify(snapshot, undefined, 2))
+            )))
+                .toEqual(JSON.parse(JSON.stringify(snapshot, undefined, 2)))
 
             done()
         })
