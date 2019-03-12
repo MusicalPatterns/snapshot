@@ -15,5 +15,6 @@ When inside the directory of a pattern for which you want to update the snapshot
 musical-patterns-snapshot
 ```
 
-This snapshot is used by the snapshot test to ensure the pattern stays locked down unless you mean to change it.
-When you import a published pattern, you can import either the snapshot, or the pattern if you want to customize it before performing by configuring its spec and recompiling it.
+Uses the `@musical-patterns/compiler` to maintain an up-to-date copy of compiled pattern data in the repo.
+This `snapshot.json` file is tested against before each shipment, ensuring your pattern doesn't change if you don't mean it to.
+It also can be played directly by the `@musical-patterns/performer` if you are performing in an environment without a `@musical-patterns/compiler`, or simply don't need to modify the pattern's initial spec.
