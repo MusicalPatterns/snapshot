@@ -6,7 +6,7 @@ const { compilePattern } = require('@musical-patterns/compiler')
 
 const updateSnapshot = async () => {
     const { pattern } = require(`${ESCAPE_COMPILER_NODE_MODULES_FOR_PATTERN_FOR_REQIRING}src`)
-    const snapshot = await compilePattern({ material: pattern.material, spec: pattern.data.initial })
+    const snapshot = await compilePattern(pattern)
 
     const snapshotFile = 'src/snapshot.json'
     existsSync(snapshotFile) && unlinkSync(snapshotFile)
