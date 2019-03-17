@@ -4,5 +4,5 @@ set -e
 
 tsc -p tsconfig.node.json
 if [[ $? == 0 ]] ; then
-	ts-node -P tsconfig.node.json node_modules/@musical-patterns/snapshot/bin/snapshot.js
+	NODE_ENV=snapshot ts-node -P tsconfig.node.json node_modules/@musical-patterns/snapshot/bin/snapshot.js
 fi
