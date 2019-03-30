@@ -5,6 +5,7 @@ import * as path from 'path'
 describe('snapshot', () => {
     // tslint:disable-next-line no-require-imports
     const { pattern } = require('../src/indexForTest')
+    // tslint:disable-next-line no-require-imports
     const snapshot: Voice[] = require('../snapshot')
 
     if (!pattern) {
