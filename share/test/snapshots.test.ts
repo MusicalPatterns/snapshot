@@ -50,8 +50,10 @@ describe('snapshots', () => {
             done()
         })
 
-        presetsSnapshotTests(pattern.spec.presets)
-            .then()
-            .catch()
+        if (pattern.spec.presets) {
+            presetsSnapshotTests(pattern.spec.presets)
+                .then()
+                .catch()
+        }
     }
 })

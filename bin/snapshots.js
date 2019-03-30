@@ -10,9 +10,11 @@ const updateSnapshots = async () => {
     const snapshots = {
         initial: await compilePattern(pattern)
     }
-    await Promise.all(Object.entries(pattern.spec.presets).map(async ([ presetName, preset ]) => {
-        snapshots[ presetName ] = await compilePattern({ material: pattern.material, specs: preset.specs })
-    }))
+    if (pattern.spec.presets) {
+        await Promise.all(Object.entries(pattern.spec.presets).map(async ([ presetName, preset ]) => {
+            snapshots[ presetName ] = await compilePattern({ material: pattern.material, specs: preset.specs })
+        }))
+    }
 
     const snapshotsFile = 'snapshots.json'
     existsSync(snapshotsFile) && unlinkSync(snapshotsFile)
