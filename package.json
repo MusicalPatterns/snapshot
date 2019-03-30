@@ -1,11 +1,11 @@
 {
   "name": "@musical-patterns/snapshot",
-  "version": "1.0.60",
+  "version": "1.0.61",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
   "bin": {
-    "musical-patterns-snapshot": "bin/index.sh"
+    "musical-patterns-snapshots": "bin/index.sh"
   },
   "repository": {
     "type": "git",

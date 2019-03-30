@@ -1,0 +1,5 @@
+Makefile.snapshot:
+	@:
+
+snapshots:
+	@musical-patterns-snapshots
