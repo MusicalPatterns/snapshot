@@ -3,7 +3,8 @@ import * as path from 'path'
 
 describe('snapshot', () => {
     // tslint:disable-next-line no-require-imports
-    const { pattern, snapshot } = require('../src/indexForTest')
+    const { pattern } = require('../src/indexForTest')
+    const snapshot = require('../snapshot')
 
     if (!pattern) {
         const pathArray: string[] = path.dirname(__dirname)
