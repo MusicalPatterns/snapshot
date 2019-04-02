@@ -14,7 +14,7 @@ describe('snapshots', () => {
         async (presets: ObjectOf<Preset>): Promise<void[]> =>
             Promise.all(Object.entries(presets)
                 .map(async ([ presetName, preset ]: [ string, Preset ]) => {
-                    it('initial stays locked down', async (done: DoneFn) => {
+                    it(`${presetName} preset stays locked down`, async (done: DoneFn) => {
                         const { voices } = await compilePattern({ material: pattern.material, specs: preset.specs })
                         expect(JSON.parse(JSON.stringify(
                             voices,
