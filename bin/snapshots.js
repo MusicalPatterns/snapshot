@@ -7,12 +7,14 @@ const { compilePattern } = require('@musical-patterns/compiler')
 const updateSnapshots = async () => {
     const { pattern } = require(`${ESCAPE_COMPILER_NODE_MODULES_FOR_PATTERN_FOR_REQIRING}src`)
 
+    const { voices: initialVoices } = await compilePattern(pattern)
     const snapshots = {
-        initial: await compilePattern(pattern)
+        initial: initialVoices
     }
     if (pattern.spec.presets) {
         await Promise.all(Object.entries(pattern.spec.presets).map(async ([ presetName, preset ]) => {
-            snapshots[ presetName ] = await compilePattern({ material: pattern.material, specs: preset.specs })
+            const { voices } = await compilePattern({ material: pattern.material, specs: preset.specs })
+            snapshots[ presetName ] = voices
         }))
     }
 
